@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extension Scanner</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 300px;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 1.5em;
+    }
+
+    #scanButton {
+      padding: 10px;
+      font-size: 1em;
+      margin-bottom: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease; /* Add transition effect for background color */
+    }
+
+    #scanButton:hover {
+      background-color: #45a049; /* Darker color on hover */
+    }
+
+    #scanButton:active {
+      background-color: #3e8e41; /* Even darker color on press */
+    }
+
+    #warningMessage {
+      color: red;
+      margin-top: 10px;
+      white-space: pre-line;
+    }
+  </style>
+</head>
+<body>
+  <h1>Extension Scanner</h1>
+  <button id="scanButton">Start Scan</button>
+  <div id="warningMessage"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

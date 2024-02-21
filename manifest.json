@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Extension ID Reader",
+  "version": "1.0",
+  "description": "Reads all installed extension IDs",
+  "permissions": ["management"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
